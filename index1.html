@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <title> Login</title>
   </head>
   <body>
     <img src="assets/image/index.jpg" width="1500" height="300" alt="Bienvenido">
-
+    <div>
     <center>
-      <h1 style="color: blue"> Login</h1>
+      <h1> Login </h1>
     <table style= "width:25%">
       <tr>
         <td> <label for="fname">User:</label> </td>
@@ -17,18 +18,24 @@
         <td> <label for="lname">Password:</label> </td>
         <td><input type="text" name="lname"><br></td>
       </tr>
+      <center>
       <tr>
-        <td></td>
-        <td> <button type="submit">login</button>  </td>
-        <td><button type="submit"> Cancel </button>
+        <td>
+          <button class="btn" type="submit">Login</button>
+        </td>
+        <td>
+          <button class="btn" type="submit"> Cancel </button>
         </td>
       </tr>
+      <tr>
+        <td colspan="2"><a href="components/registro.html">sign up</a> </td>
+      </tr>
+      <tr>
+        <td colspan="2">  <a href="">forget the password</a</td>
+      </tr>
     </table>
-      <a href="components/registro.html">sign up</a>
-      <div>
-      <a href="registro.html">forget the password</a>
-      </div>
-     </center>
+    </center>
+  </div>
 
   </body>
 </html>

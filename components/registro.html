@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="stylesheet" href="../style.css" media="screen" title="no title" charset="utf-8">
     <title> Registre</title>
   </head>
   <body>
 
-    <h1>
-    <table style= "width:25%">
-      <tr>
-        <td> <label for="fname">name:</label> </td>
-        <td><input type="text" name="fname"><br></td>
-      </tr>
-      <tr>
-        <td> <label for="lname">Lastname:</label> </td>
-        <td><input type="text" name="lname"><br></td>
-      </tr>
-      <tr>
-        <td> <label for="emailre">Email:</label> </td>
-        <td><input type="text" name="ename"><br></td>
-      </tr>
-      <tr>
-        <td> <label for="password">Password:</label> </td>
-        <td><input type="text" name="ename"><br></td>
-      </tr>
-      <tr>
-        <td colspan="2"><label for="gender">Gender:</label>
-          <select name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">other</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td> <button type="submit">Save</button>  </td>
-        <td><button type="submit"> Cancel </button>
-        </td>
-      </tr>
-
-     </center>
-    </table>
+      <center>
+        <h1> Registrese </h1>
+        <div>
+        <table style= "width:25%">
+          <tr>
+            <td> <label for="fname">Name:</label> </td>
+            <td><input type="text" name="fname"><br></td>
+          </tr>
+          <tr>
+            <td> <label for="lname">Lastname:</label> </td>
+            <td><input type="text" name="lname"><br></td>
+          </tr>
+          <tr>
+            <td> <label for="emailre">Email:</label> </td>
+            <td><input type="text" name="ename"><br></td>
+          </tr>
+          <tr>
+            <td> <label for="password">Password:</label> </td>
+            <td><input type="text" name="ename"><br></td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="gender">Gender:</label>
+              <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td> <button  class="btn" type="submit">Save</button>  </td>
+            <td><button  class="btn" type="submit"> Cancel </button> </td>
+          </tr>
+        </table>
+      </center>
+    </div>
   </body>
 </html>
