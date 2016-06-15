@@ -3,20 +3,27 @@
   <head>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <title> Login</title>
+
+    <script type="text/javascript" src="javascript/script.js"></script>
   </head>
   <body>
-    <img src="assets/image/index.jpg" width="1500" height="300" alt="Bienvenido">
+    <center>
+    <img src="assets/image/index.jpg" width="800" height="300" alt="Bienvenido">
+    </center>
     <div>
     <center>
+      <button type="button" onclick="Login()">Oprimir</button>
+
+
       <h1> Login </h1>
     <table style= "width:25%">
       <tr>
         <td> <label for="fname">User:</label> </td>
-        <td><input type="text" name="fname"><br></td>
+        <td><input id = "username" type="text" name="fname" onblur="validate()"><br></td>
       </tr>
       <tr>
         <td> <label for="lname">Password:</label> </td>
-        <td><input type="text" name="lname"><br></td>
+        <td><input id = "password" type="text" name="lname" onblur="validate()"><br></td>
       </tr>
       <center>
       <tr>
@@ -36,6 +43,7 @@
     </table>
     </center>
   </div>
+  <p id= "error"></p>
 
   </body>
 </html>
