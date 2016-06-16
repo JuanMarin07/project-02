@@ -17,3 +17,11 @@ function validate () {
     document.getElementById('error').innerHTML = 'Username and Password are valid !.'
   };
 };
+$(document).ready(function(){
+    $("table").mouseover(function(){
+        $("table").css("background-color", "#FAAC58");
+    });
+    $("table").mouseleave(function(){
+        $("table").css("background-color", "white");
+    });
+});
