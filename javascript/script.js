@@ -17,11 +17,31 @@ function validate () {
     document.getElementById('error').innerHTML = 'Username and Password are valid !.'
   };
 };
+
+
+
 $(document).ready(function(){
-    $("table").mouseover(function(){
-        $("table").css("background-color", "#FAAC58");
+
+    $('table').mouseover(function(){
+        $('table').css('background-color', '#F5DA81')
     });
-    $("table").mouseleave(function(){
-        $("table").css("background-color", "white");
+    $('table').mouseleave(function(){
+        $('table').css('background-color', 'white')
+    });
+});
+
+
+$(document).ready(function(){
+    var username, password
+    username = $('#username').value
+    password = $('#password').value
+ $('.btn-ingresar').click(function(){
+      if ((username === undefined || username === '')
+                      || (password === undefined || password === '')) {
+      $('input').css('border-color', 'red')
+      }
+      else {
+        $('input').css('border-color', 'green')
+      }
     });
 });
